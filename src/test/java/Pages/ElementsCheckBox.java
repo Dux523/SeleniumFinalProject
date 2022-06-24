@@ -18,6 +18,19 @@ public class ElementsCheckBox {
     WebElement expandAllButton;
     WebElement officeBox;
     WebElement result;
+    String resultsWhenSelectAll = "You have selected :\n" +
+            "workspace\n" +
+            "react\n" +
+            "angular\n" +
+            "veu\n" +
+            "general\n" +
+            "downloads\n" +
+            "wordFile\n" +
+            "excelFile";
+
+    public String getResultsWhenSelectAll() {
+        return resultsWhenSelectAll;
+    }
 
     public ElementsCheckBox(WebDriver driver, WebDriverWait wdwait) {
         this.driver = driver;

@@ -98,16 +98,8 @@ public class TestPage extends BaseTest {
         }catch (Exception e){}
         Assert.assertFalse(check);
 
-        String resultsWhenSelectAll = "You have selected :\n" +
-                "workspace\n" +
-                "react\n" +
-                "angular\n" +
-                "veu\n" +
-                "general\n" +
-                "downloads\n" +
-                "wordFile\n" +
-                "excelFile";
-        Assert.assertEquals(elementsCheckBox.getResult(),resultsWhenSelectAll);
+        //Assert words that are showing what you have selected
+        Assert.assertEquals(elementsCheckBox.getResult(),elementsCheckBox.getResultsWhenSelectAll());
 
     }
 }
